@@ -1,4 +1,3 @@
-<?php include("connection.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,20 +70,4 @@
 </html>
 
 
-<?php
-if ($_POST['save']) {
-    $user = $_POST['user'];
-    $email = $_POST['email'];
-    $pass = $_POST['pass'];
-    $con = $_POST['con'];
-
-    $query = "INSERT INTO details values('$user','$email','$pass','$con')";
-    $data = mysqli_query($conn, $query);
-    if ($data) {
-        echo "inserted succesfully";
-    } else {
-
-        echo "fail to insert";
-    }
-}
-?>             
+             
